@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RoomImplementation</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="quotes_app">Quotes App</string>
+    <string name="quote">quoteimg</string>
+    <string name="quotes">Quotes</string>
+    <string name="author">Author</string>
+    <string name="addfragment">Insert Values</string>
+</resources>

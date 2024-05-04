@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/backgradient"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="2"
+
+            android:gravity="center"
+            android:text="@string/quotes_app"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="6"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                app:cardCornerRadius="20dp"
+                android:text="Hello World!"
+                android:background="@drawable/cardback">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:contentDescription="@string/quote"
+                        android:layout_width="70dp"
+                        android:layout_margin="4dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/baseline_format_quote_24"></ImageView>
+
+                    <TextView
+                        android:id="@+id/quoteTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:hint="@string/quotes"
+                        android:fontFamily="@font/owsald"
+                        android:paddingHorizontal="10dp"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:maxLines="3"></TextView>
+
+                    <TextView
+                        android:id="@+id/authorTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="@string/author"
+                        android:paddingHorizontal="10dp"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/owsald"
+                        android:paddingStart="20dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="@string/previous"
+                android:textSize="20sp"
+                android:textAlignment="textStart"
+                android:singleLine="true"
+                android:onClick="onPrevious"
+                android:drawableLeft="@drawable/baseline_keyboard_arrow_left_24"
+                android:background="@android:color/transparent"
+                android:layout_marginHorizontal="4dp">
+
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="@string/next"
+                android:textSize="20sp"
+                android:textAlignment="textEnd"
+                android:onClick="onNext"
+                android:drawableRight="@drawable/rightarrow"
+                android:background="@android:color/transparent"
+                android:layout_marginHorizontal="4dp">
+
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
